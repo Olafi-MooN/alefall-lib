@@ -1,18 +1,14 @@
 import { NgModule } from '@angular/core';
-import { MakethejobComponent } from './makethejob.component';
-import { KeyboarkMouseLockDirective } from './shared/directives/keyboark-mouse-lock.directive';
-
-
+import { KeyboardMouseLockDirective } from './shared/directives/keyboard-mouse-lock.directive';
 
 @NgModule({
   declarations: [
-    MakethejobComponent,
-    KeyboarkMouseLockDirective
+    KeyboardMouseLockDirective
   ],
   imports: [
   ],
   exports: [
-    MakethejobComponent
+    KeyboardMouseLockDirective
   ]
 })
 export class MakethejobModule { }
