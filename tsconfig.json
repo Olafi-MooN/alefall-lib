@@ -2,6 +2,12 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
+    "paths": {
+      "@alefall/makethejob": [
+        "dist/alefall/makethejob/alefall-makethejob",
+        "dist/alefall/makethejob"
+      ]
+    },
     "baseUrl": "./",
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,
