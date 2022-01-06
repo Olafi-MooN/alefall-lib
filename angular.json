@@ -7,7 +7,7 @@
       "projectType": "library",
       "root": "projects/alefall/makethejob",
       "sourceRoot": "projects/alefall/makethejob/src",
-      "prefix": "all",
+      "prefix": "alef",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:ng-packagr",

@@ -1,14 +1,17 @@
 import { NgModule } from '@angular/core';
 import { KeyboardMouseLockDirective } from './shared/directives/keyboard-mouse-lock.directive';
+import { CpfFormatDirective } from './shared/directives/cpf-format.directive';
 
 @NgModule({
   declarations: [
-    KeyboardMouseLockDirective
+    KeyboardMouseLockDirective,
+    CpfFormatDirective
   ],
   imports: [
   ],
   exports: [
-    KeyboardMouseLockDirective
+    KeyboardMouseLockDirective,
+    CpfFormatDirective,
   ]
 })
 export class MakethejobModule { }
