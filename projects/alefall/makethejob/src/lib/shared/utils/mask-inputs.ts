@@ -60,6 +60,7 @@ export const mask = {
   },
 
   date (value: string) {
+    value = dateValidator(value);
     return value
       .replace(/\D+/g, '')
         .replace(/(\d{2})(\d)/, '$1/$2')
@@ -68,10 +69,38 @@ export const mask = {
   },
 
   dateWithDashes (value: string) {
+    value = dateValidator(value);
     return value
       .replace(/\D+/g, '')
         .replace(/(\d{2})(\d)/, '$1-$2')
           .replace(/(-\d{2})(\d)/, '$1-$2')
             .replace(/(-\d{4})\d+?$/, '$1');
   },
+}
+
+function dateValidator(value: string){
+  if(value.length === 1) {
+    if(Number(value[value.length -1]) > 3) {
+      return value.substring(0, value.length - 1);
+    }
+    return value;
+  }
+  if(value.length === 2) {
+    if(Number(value[value.length -2]) === 3 && Number(value[value.length -1]) > 1) {
+      return value.substring(0, value.length - 1);
+    }
+    return value;
+  }
+  if(value.length === 3) { 
+    if(Number(value[value.length -1]) > 1) {
+      return value.substring(0, value.length - 1);
+    }
+    return value;
+  }
+  if(value.length === 5) {
+    if(Number(value[value.length -2]) === 1 && Number(value[value.length -1]) > 2) {
+      return value.substring(0, value.length - 1);
+    }
+   }
+  return value;
 }

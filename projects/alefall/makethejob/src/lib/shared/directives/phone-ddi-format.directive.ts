@@ -2,7 +2,7 @@ import { Directive, HostListener } from '@angular/core';
 import { mask } from '../utils/mask-inputs';
 
 @Directive({
-  selector: '[alefPhoneDdiFormat]'
+  selector: '[alefPhoneDDIFormat]'
 })
 export class PhoneDdiFormatDirective {
 

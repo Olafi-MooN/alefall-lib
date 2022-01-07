@@ -1,4 +1,4 @@
-import { MakethejobModule } from './../../../alefall/makethejob/src/lib/makethejob.module';
+import { MakethejobModule } from '@alefall/makethejob';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 

@@ -1,14 +1,14 @@
 import { Directive, HostListener} from '@angular/core';
 
 @Directive({
-  selector: '[allKeyboardMouseLock]'
+  selector: '[alefPastLock]'
 })
 export class KeyboardMouseLockDirective {
 
   constructor() { }
 
   @HostListener('paste', ['$event']) blockPaste(e: KeyboardEvent) {
-    e.preventDefault();
+    return e.preventDefault();
   }
 
 }
