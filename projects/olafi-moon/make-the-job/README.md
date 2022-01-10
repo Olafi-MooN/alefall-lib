@@ -1,54 +1,8 @@
-<!-- ## How Use?
-
-```html
-<form class="form-format">
-  <fieldset>
-    <legend>Format Inputs With AlefFormat</legend>
-    <p>
-      <label for="cep">CEP</label><br/>
-      <input alefCepFormat type="text" name="cep" id="cep"/>
-    </p>
-    <p>
-      <label for="cnpj">CNPJ</label><br/>
-      <input alefCnpjFormat type="text" name="cnpj" id="cnpj"/>
-    </p>
-    <p>
-      <label for="date">Date</label><br/>
-      <input alefDateFormat type="text" name="date" id="date"/>
-    </p>
-    <p>
-      <label for="date-dashers">Date with dashers</label><br/>
-      <input alefDateWithDashersFormat type="text" name="date-dashers" id="date-dashers"/>
-    </p>
-    <p>
-      <label for="paste-lock">Paste lock</label><br/>
-      <input alefPastLock type="text" name="paste-lock" id="paste-lock"/>
-    </p>
-    <p>
-      <label for="money">Money</label><br/>
-      <input alefMoneyFormat type="text" name="money" id="money"/>
-    </p>
-    <p>
-      <label for="phone-ddi">Phone DDI</label><br/>
-      <input alefPhoneDDIFormat type="text" name="phone-ddi" id="phone-ddi"/>
-    </p>
-    <p>
-      <label for="phone">Phone</label><br/>
-      <input alefPhoneFormat type="text" name="phone" id="phone"/>
-    </p>
-    <p>
-      <label for="pis">Pis</label><br/>
-      <input alefPisFormat type="text" name="pis" id="pis"/>
-    </p>
-  </fieldset>
-</form>
-``` -->
- 
 This library aims to facilitate the formatting of inputs in angular. 
 It is still being developed and is in a trial version.
 
 <p align="center">
-  <img height="100px" width="200px" style="text-align: center;" src="src/assets/logo-completo.png">
+  <img height="100px" width="200px" style="text-align: center;" src="https://raw.githubusercontent.com/Olafi-MooN/alefall-lib/master/projects/alefall/makethejob/src/assets/logo-completo.png">
   <h1 align="center">Alef All Library Inputs</h1>
 </p>
 
@@ -61,9 +15,9 @@ It is still being developed and is in a trial version.
 
 Use appropriate version based on your Angular version.
 
-| Angular 4   | Angular 5   | Angular 6/7 | Angular 8 | Angular 9  | Angular 10  | Angular 11  | Angular 12  |
-| ----------- | ----------- | ----------- | --------- | ---------- | ----------- | ----------- | ----------- |
-| >= `v1.2.0` | >= `v2.0.0` | `v7.2.0`    | `v8.1.0`  | >=`v9.0.1` | >=`v10.0.1` | >=`v11.0.2` | >=`v12.0.0` |
+| Angular 12  |
+| ----------- | 
+| >= `v^13.1.0` |
 
 
 
@@ -92,7 +46,7 @@ Use appropriate version based on your Angular version.
 Using npm:
 
 ```bash
-$ npm install MakeTheJob --save
+$ npm i @olafi-moon/make-the-job
 ```
 
 Using yarn: (no version)

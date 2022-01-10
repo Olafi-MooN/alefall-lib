@@ -9,6 +9,8 @@ export class CpfFormatDirective {
   constructor() { }
 
   @HostListener('input', ['$event']) cpfHostListener(e: any) {
-    e.target.value = mask.money(e.target.value);
+    let element = e.target as HTMLInputElement;
+    element.value = mask.cpf(element.value);
+    return element;
   }
 }

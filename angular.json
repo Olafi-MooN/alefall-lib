@@ -3,23 +3,23 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "@alefall/makethejob": {
+    "@olafi-moon/make-the-job": {
       "projectType": "library",
-      "root": "projects/alefall/makethejob",
-      "sourceRoot": "projects/alefall/makethejob/src",
+      "root": "projects/olafi-moon/make-the-job",
+      "sourceRoot": "projects/olafi-moon/make-the-job/src",
       "prefix": "alef",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:ng-packagr",
           "options": {
-            "project": "projects/alefall/makethejob/ng-package.json"
+            "project": "projects/olafi-moon/make-the-job/ng-package.json"
           },
           "configurations": {
             "production": {
-              "tsConfig": "projects/alefall/makethejob/tsconfig.lib.prod.json"
+              "tsConfig": "projects/olafi-moon/make-the-job/tsconfig.lib.prod.json"
             },
             "development": {
-              "tsConfig": "projects/alefall/makethejob/tsconfig.lib.json"
+              "tsConfig": "projects/olafi-moon/make-the-job/tsconfig.lib.json"
             }
           },
           "defaultConfiguration": "production"
@@ -27,9 +27,9 @@
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "projects/alefall/makethejob/src/test.ts",
-            "tsConfig": "projects/alefall/makethejob/tsconfig.spec.json",
-            "karmaConfig": "projects/alefall/makethejob/karma.conf.js"
+            "main": "projects/olafi-moon/make-the-job/src/test.ts",
+            "tsConfig": "projects/olafi-moon/make-the-job/tsconfig.spec.json",
+            "karmaConfig": "projects/olafi-moon/make-the-job/karma.conf.js"
           }
         }
       }
@@ -148,5 +148,5 @@
       }
     }
   },
-  "defaultProject": "@alefall/makethejob"
+  "defaultProject": "@olafi-moon/make-the-job"
 }
